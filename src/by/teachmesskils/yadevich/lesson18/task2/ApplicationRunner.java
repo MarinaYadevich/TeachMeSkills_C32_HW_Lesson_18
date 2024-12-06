@@ -38,6 +38,7 @@ public class ApplicationRunner {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter one any letter: ");
         String letter = scanner.nextLine();
+        scanner.close();
 
         if (letter == null || letter.isEmpty() || letter.matches("//d")) {
             System.out.println("Invalid line.");
